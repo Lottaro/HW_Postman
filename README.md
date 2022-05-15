@@ -25,6 +25,7 @@ request url params:
  В params пишем:
    KEY - name  VALUE - Sergey
    KEY - age  VALUE - 36
+ URL меняется на http://162.55.220.72:5005/get_method?name=Sergey&age=36
  Сохранияем, жмем Send
  
  Ответ
@@ -34,3 +35,39 @@ request url params:
 ]
 
 # **EP_2**
+
+Method: POST
+EndPoint: /user_info_3
+request form data: 
+ name: str
+ age: int
+ salary: int
+ 
+ Создаем New Request, переименовываем в EP_2
+ Метод POST, URL http://162.55.220.72:5005/user_info_3
+ В body выбираем from-data пишем:
+   KEY - name  VALUE - Sergey
+   KEY - age  VALUE - 36
+   KEY - salary  VALUE - 60000
+ URL не меняется  
+ Сохранияем, жмем Send
+ 
+ Ответ
+ {
+    "age": "36",
+    "family": {
+        "children": [
+            [
+                "Alex",
+                24
+            ],
+            [
+                "Kate",
+                12
+            ]
+        ],
+        "u_salary_1_5_year": 240000
+    },
+    "name": "Sergey",
+    "salary": 60000
+}
