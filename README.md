@@ -225,7 +225,7 @@ request form data:
  salary: int  
  
 Создаем New Request, переименовываем в EP_7  
-Метод POST, URL http://162.55.220.72:5005/user_info_2 
+Метод POST, URL http://162.55.220.72:5005/user_info_2  
 В body выбираем from-data и пишем:  
    KEY - name,  VALUE - Sergey  
    KEY - age,  VALUE - 36  
