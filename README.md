@@ -49,8 +49,9 @@ request form data:
    KEY - salary  VALUE - 60000  
 URL не меняется   
 Сохранияем, жмем Send  
-```json
+
 Ответ  
+```json
  {
     "age": "36",
     "family": {
