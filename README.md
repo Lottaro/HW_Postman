@@ -20,16 +20,16 @@ request url params:
  name: str
  age: int
  
- Создаем New Request, переименовываем в EP_1
- Метод GET, URL http://162.55.220.72:5005/get_method
- В params пишем:
+Создаем New Request, переименовываем в EP_1
+Метод GET, URL http://162.55.220.72:5005/get_method
+В params пишем:
    KEY - name  VALUE - Sergey
    KEY - age  VALUE - 36
- URL меняется на http://162.55.220.72:5005/get_method?name=Sergey&age=36
- Сохранияем, жмем Send
+URL меняется на http://162.55.220.72:5005/get_method?name=Sergey&age=36
+Сохранияем, жмем Send
  
- Ответ
- [
+Ответ
+[
     "Sergey",
     "36"
 ]
@@ -43,16 +43,16 @@ request form data:
  age: int
  salary: int
  
- Создаем New Request, переименовываем в EP_2
- Метод POST, URL http://162.55.220.72:5005/user_info_3
- В body выбираем from-data пишем:
+Создаем New Request, переименовываем в EP_2
+Метод POST, URL http://162.55.220.72:5005/user_info_3
+В body выбираем from-data и пишем:
    KEY - name  VALUE - Sergey
    KEY - age  VALUE - 36
    KEY - salary  VALUE - 60000
- URL не меняется  
- Сохранияем, жмем Send
+URL не меняется  
+Сохранияем, жмем Send
  
- Ответ
+Ответ
  {
     "age": "36",
     "family": {
@@ -70,4 +70,30 @@ request form data:
     },
     "name": "Sergey",
     "salary": 60000
+}
+
+# **EP_3**
+
+Method: GET
+EndPoint: /object_info_1
+request url params: 
+ name: str
+ age: int
+ weight: int
+
+Создаем New Request, переименовываем в EP_3
+Метод GET, URL http://162.55.220.72:5005/object_info_1
+В params пишем:
+   KEY - name  VALUE - Sergey
+   KEY - age  VALUE - 36
+   KEY - weight  VALUE - 86
+URL меняется на http://162.55.220.72:5005/object_info_1?name=Sergey&age=36&weight=86
+Сохранияем, жмем Send
+
+Ответ
+{
+    "age": 36,
+    "daily_food": 1.032,
+    "daily_sleep": 215.0,
+    "name": "Sergey"
 }
