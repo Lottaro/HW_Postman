@@ -89,14 +89,15 @@ request url params:
 URL меняется на http://162.55.220.72:5005/object_info_1?name=Sergey&age=36&weight=86  
 Сохранияем, жмем Send  
 
-Ответ  
+Ответ 
+```json
 {
     "age": 36,
     "daily_food": 1.032,
     "daily_sleep": 215.0,
     "name": "Sergey"
 }
-
+```
 # **EP_4**
 
 Method: GET  
@@ -115,7 +116,8 @@ request url params:
 URL меняется на http://162.55.220.72:5005/object_info_2?name=Sergey&age=36&salary=60000   
 Сохранияем, жмем Send  
 
-Ответ  
+Ответ 
+```json
 {
     "person": {
         "u_age": 36,
@@ -132,5 +134,5 @@ URL меняется на http://162.55.220.72:5005/object_info_2?name=Sergey&ag
     "qa_salary_after_6_months": 120000,
     "start_qa_salary": 60000
 }
-
+```
 # **EP_5**
