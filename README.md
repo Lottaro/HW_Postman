@@ -49,7 +49,7 @@ request form data:
    KEY - salary  VALUE - 60000  
 URL не меняется   
 Сохранияем, жмем Send  
- 
+```json
 Ответ  
  {
     "age": "36",
@@ -69,7 +69,7 @@ URL не меняется
     "name": "Sergey",
     "salary": 60000
 }
-
+```
 # **EP_3**
 
 Method: GET  
