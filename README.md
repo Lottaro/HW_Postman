@@ -185,3 +185,19 @@ URL меняется на http://162.55.220.72:5005/object_info_3?name=Sergey&ag
 ```
 
 # **EP_6**
+
+Method: GET  
+EndPoint: /object_info_4  
+request url params:  
+ name: str  
+ age: int  
+ salary: int  
+ 
+Метод GET, URL http://162.55.220.72:5005/object_info_4  
+В params пишем:  
+   KEY - name  VALUE - Sergey  
+   KEY - age  VALUE - 36  
+    KEY - salary  VALUE - 60000  
+URL меняется на http://162.55.220.72:5005/object_info_4?name=Sergey&age=36&salary=60000  
+Сохранияем, жмем Send  
+ 
