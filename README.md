@@ -4,11 +4,9 @@
 
 Создать запросы в Postman.
 
- Protocol: http 
- 
-IP: 162.55.220.72 
-
-Port: 5005 
+Protocol: http  
+IP: 162.55.220.72  
+Port: 5005  
 
 Создал новую коллекцию HW_Postman_1_1, вписываем в URL http://162.55.220.72:5005 и сохраняем
 
@@ -20,15 +18,15 @@ request url params:
  name: str  
  age: int  
  
-Создаем New Request, переименовываем в EP_1
-Метод GET, URL http://162.55.220.72:5005/get_method
-В params пишем:
-   KEY - name  VALUE - Sergey
-   KEY - age  VALUE - 36
-URL меняется на http://162.55.220.72:5005/get_method?name=Sergey&age=36
-Сохранияем, жмем Send
+Создаем New Request, переименовываем в EP_1  
+Метод GET, URL http://162.55.220.72:5005/get_method  
+В params пишем:  
+   KEY - name  VALUE - Sergey  
+   KEY - age  VALUE - 36  
+URL меняется на http://162.55.220.72:5005/get_method?name=Sergey&age=36  
+Сохранияем, жмем Send  
  
-Ответ
+Ответ  
 [
     "Sergey",
     "36"
@@ -36,23 +34,23 @@ URL меняется на http://162.55.220.72:5005/get_method?name=Sergey&age=3
 
 # **EP_2**
 
-Method: POST
-EndPoint: /user_info_3
-request form data: 
- name: str
- age: int
- salary: int
+Method: POST  
+EndPoint: /user_info_3  
+request form data:  
+ name: str  
+ age: int  
+ salary: int  
  
-Создаем New Request, переименовываем в EP_2
-Метод POST, URL http://162.55.220.72:5005/user_info_3
-В body выбираем from-data и пишем:
-   KEY - name  VALUE - Sergey
-   KEY - age  VALUE - 36
-   KEY - salary  VALUE - 60000
-URL не меняется  
-Сохранияем, жмем Send
+Создаем New Request, переименовываем в EP_2  
+Метод POST, URL http://162.55.220.72:5005/user_info_3  
+В body выбираем from-data и пишем:  
+   KEY - name  VALUE - Sergey  
+   KEY - age  VALUE - 36  
+   KEY - salary  VALUE - 60000  
+URL не меняется   
+Сохранияем, жмем Send  
  
-Ответ
+Ответ  
  {
     "age": "36",
     "family": {
@@ -74,23 +72,23 @@ URL не меняется
 
 # **EP_3**
 
-Method: GET
-EndPoint: /object_info_1
-request url params: 
- name: str
- age: int
- weight: int
+Method: GET  
+EndPoint: /object_info_1  
+request url params:  
+ name: str  
+ age: int  
+ weight: int  
 
-Создаем New Request, переименовываем в EP_3
-Метод GET, URL http://162.55.220.72:5005/object_info_1
-В params пишем:
-   KEY - name  VALUE - Sergey
-   KEY - age  VALUE - 36
-   KEY - weight  VALUE - 86
-URL меняется на http://162.55.220.72:5005/object_info_1?name=Sergey&age=36&weight=86
-Сохранияем, жмем Send
+Создаем New Request, переименовываем в EP_3  
+Метод GET, URL http://162.55.220.72:5005/object_info_1  
+В params пишем:  
+   KEY - name  VALUE - Sergey  
+   KEY - age  VALUE - 36  
+   KEY - weight  VALUE - 86  
+URL меняется на http://162.55.220.72:5005/object_info_1?name=Sergey&age=36&weight=86  
+Сохранияем, жмем Send  
 
-Ответ
+Ответ  
 {
     "age": 36,
     "daily_food": 1.032,
