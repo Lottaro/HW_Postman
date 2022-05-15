@@ -14,11 +14,11 @@ Port: 5005
 
 # **EP_1**
 
-Method: GET                                                                                         
-EndPoint: /get_method
-request url params: 
- name: str
- age: int
+Method: GET                                                                                          
+EndPoint: /get_method  
+request url params:  
+ name: str  
+ age: int  
  
 Создаем New Request, переименовываем в EP_1
 Метод GET, URL http://162.55.220.72:5005/get_method
