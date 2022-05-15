@@ -21,8 +21,8 @@ request url params:
 Создаем New Request, переименовываем в EP_1  
 Метод GET, URL http://162.55.220.72:5005/get_method  
 В params пишем:  
-   KEY - name  VALUE - Sergey  
-   KEY - age  VALUE - 36  
+   KEY - name,  VALUE - Sergey  
+   KEY - age,  VALUE - 36  
 URL меняется на http://162.55.220.72:5005/get_method?name=Sergey&age=36  
 Сохранияем, жмем Send  
  
@@ -44,9 +44,9 @@ request form data:
 Создаем New Request, переименовываем в EP_2  
 Метод POST, URL http://162.55.220.72:5005/user_info_3  
 В body выбираем from-data и пишем:  
-   KEY - name  VALUE - Sergey  
-   KEY - age  VALUE - 36  
-   KEY - salary  VALUE - 60000  
+   KEY - name,  VALUE - Sergey  
+   KEY - age,  VALUE - 36  
+   KEY - salary,  VALUE - 60000  
 URL не меняется   
 Сохранияем, жмем Send  
 
@@ -83,9 +83,9 @@ request url params:
 Создаем New Request, переименовываем в EP_3  
 Метод GET, URL http://162.55.220.72:5005/object_info_1  
 В params пишем:  
-   KEY - name  VALUE - Sergey  
-   KEY - age  VALUE - 36  
-   KEY - weight  VALUE - 86  
+   KEY - name,  VALUE - Sergey  
+   KEY - age, VALUE - 36  
+   KEY - weight,  VALUE - 86  
 URL меняется на http://162.55.220.72:5005/object_info_1?name=Sergey&age=36&weight=86  
 Сохранияем, жмем Send  
 
@@ -110,9 +110,9 @@ request url params:
 Создаем New Request, переименовываем в EP_4  
 Метод GET, URL http://162.55.220.72:5005/object_info_2  
 В params пишем:  
-   KEY - name  VALUE - Sergey  
-   KEY - age  VALUE - 36  
-    KEY - salary  VALUE - 60000  
+   KEY - name,  VALUE - Sergey  
+   KEY - age,  VALUE - 36  
+    KEY - salary,  VALUE - 60000  
 URL меняется на http://162.55.220.72:5005/object_info_2?name=Sergey&age=36&salary=60000   
 Сохранияем, жмем Send  
 
@@ -146,9 +146,9 @@ request url params:
  
  Метод GET, URL http://162.55.220.72:5005/object_info_3  
 В params пишем:  
-   KEY - name  VALUE - Sergey  
-   KEY - age  VALUE - 36  
-    KEY - salary  VALUE - 60000  
+   KEY - name,  VALUE - Sergey  
+   KEY - age,  VALUE - 36  
+    KEY - salary,  VALUE - 60000  
 URL меняется на http://162.55.220.72:5005/object_info_3?name=Sergey&age=36&salary=60000  
 Сохранияем, жмем Send  
 
@@ -195,9 +195,9 @@ request url params:
  
 Метод GET, URL http://162.55.220.72:5005/object_info_4  
 В params пишем:  
-   KEY - name  VALUE - Sergey  
-   KEY - age  VALUE - 36  
-    KEY - salary  VALUE - 60000  
+   KEY - name,  VALUE - Sergey  
+   KEY - age,  VALUE - 36  
+    KEY - salary,  VALUE - 60000  
 URL меняется на http://162.55.220.72:5005/object_info_4?name=Sergey&age=36&salary=60000  
 Сохранияем, жмем Send  
 
