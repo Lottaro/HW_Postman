@@ -136,3 +136,52 @@ URL меняется на http://162.55.220.72:5005/object_info_2?name=Sergey&ag
 }
 ```
 # **EP_5**
+
+Method: GET  
+EndPoint: /object_info_3  
+request url params:  
+ name: str  
+ age: int  
+ salary: int  
+ 
+ Метод GET, URL http://162.55.220.72:5005/object_info_3  
+В params пишем:  
+   KEY - name  VALUE - Sergey  
+   KEY - age  VALUE - 36  
+    KEY - salary  VALUE - 60000  
+URL меняется на http://162.55.220.72:5005/object_info_3?name=Sergey&age=36&salary=60000  
+Сохранияем, жмем Send  
+
+Ответ
+```json
+{
+    "age": "36",
+    "family": {
+        "children": [
+            [
+                "Alex",
+                24
+            ],
+            [
+                "Kate",
+                12
+            ]
+        ],
+        "pets": {
+            "cat": {
+                "age": 3,
+                "name": "Sunny"
+            },
+            "dog": {
+                "age": 4,
+                "name": "Luky"
+            }
+        },
+        "u_salary_1_5_year": 240000
+    },
+    "name": "Sergey",
+    "salary": 60000
+}
+```
+
+# **EP_6**
