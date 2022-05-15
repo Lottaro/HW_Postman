@@ -200,4 +200,16 @@ request url params:
     KEY - salary  VALUE - 60000  
 URL меняется на http://162.55.220.72:5005/object_info_4?name=Sergey&age=36&salary=60000  
 Сохранияем, жмем Send  
- 
+
+Ответ
+```json
+{
+    "age": 36,
+    "name": "Sergey",
+    "salary": [
+        60000,
+        "120000",
+        "180000"
+    ]
+}
+```
