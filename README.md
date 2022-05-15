@@ -144,6 +144,7 @@ request url params:
  age: int  
  salary: int  
  
+ Создаем New Request, переименовываем в EP_5  
  Метод GET, URL http://162.55.220.72:5005/object_info_3  
 В params пишем:  
    KEY - name,  VALUE - Sergey  
@@ -192,7 +193,8 @@ request url params:
  name: str  
  age: int  
  salary: int  
- 
+
+Создаем New Request, переименовываем в EP_6  
 Метод GET, URL http://162.55.220.72:5005/object_info_4  
 В params пишем:  
    KEY - name,  VALUE - Sergey  
@@ -213,3 +215,20 @@ URL меняется на http://162.55.220.72:5005/object_info_4?name=Sergey&ag
     ]
 }
 ```
+# **EP_7**
+
+Method: POST  
+EndPoint: /user_info_2  
+request form data:  
+ name: str  
+ age: int  
+ salary: int  
+ 
+Создаем New Request, переименовываем в EP_7  
+Метод POST, URL http://162.55.220.72:5005/user_info_2 
+В body выбираем from-data и пишем:  
+   KEY - name,  VALUE - Sergey  
+   KEY - age,  VALUE - 36  
+   KEY - salary,  VALUE - 60000  
+URL не меняется   
+Сохранияем, жмем Send  
