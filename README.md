@@ -23,8 +23,8 @@ request url params:
  Создаем New Request, переименовываем в EP_1
  Метод GET, URL http://162.55.220.72:5005/get_method
  В params пишем:
-   В KEY пишем строки name и age
-   В VALUE пишем Sergey и 36
+   KEY - name  VALUE - Sergey
+   KEY - age  VALUE - 36
  Сохранияем, жмем Send
  
  Ответ
@@ -32,3 +32,5 @@ request url params:
     "Sergey",
     "36"
 ]
+
+# **EP_2**
