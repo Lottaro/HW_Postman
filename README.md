@@ -95,3 +95,41 @@ URL меняется на http://162.55.220.72:5005/object_info_1?name=Sergey&ag
     "daily_sleep": 215.0,
     "name": "Sergey"
 }
+
+# **EP_4**
+
+Method: GET  
+EndPoint: /object_info_2  
+request url params:  
+ name: str  
+ age: int  
+ salary: int  
+ 
+Создаем New Request, переименовываем в EP_4  
+Метод GET, URL http://162.55.220.72:5005/object_info_2  
+В params пишем:  
+   KEY - name  VALUE - Sergey  
+   KEY - age  VALUE - 36  
+    KEY - salary  VALUE - 60000  
+URL меняется на http://162.55.220.72:5005/object_info_2?name=Sergey&age=36&salary=60000   
+Сохранияем, жмем Send  
+
+Ответ  
+{
+    "person": {
+        "u_age": 36,
+        "u_name": [
+            "Sergey",
+            60000,
+            36
+        ],
+        "u_salary_5_years": 252000.0
+    },
+    "qa_salary_after_1.5_year": 198000.0,
+    "qa_salary_after_12_months": 162000.0,
+    "qa_salary_after_3.5_years": 228000.0,
+    "qa_salary_after_6_months": 120000,
+    "start_qa_salary": 60000
+}
+
+# **EP_5**
