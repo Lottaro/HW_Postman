@@ -1,6 +1,6 @@
-# HW_Postman
+## HW_Postman
 
-**HW_1**
+# **HW_Postman_1**
 
 Создать запросы в Postman.
 
@@ -250,3 +250,13 @@ URL не меняется
     "start_qa_salary": 60000
 }
 ```
+
+# **HW_Postman_1**  
+
+Создаем New Request, переименовываем в EP_2_1  
+Метод GET, URL http://162.55.220.72:5005/first  
+
+1. Отправить запрос  
+Жмем Send  
+Ответ  
+This is the first responce from server!  
