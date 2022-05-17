@@ -269,4 +269,12 @@ pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
 ```
+Во вкладке *Test Results*  
+```
+PASS Status code is 200
+```
 3. Проверить, что в body приходит правильный string  
+ответ в body  
+```
+This is the first responce from server!
+```
