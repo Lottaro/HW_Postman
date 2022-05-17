@@ -232,3 +232,21 @@ request form data:
    KEY - salary,  VALUE - 60000  
 URL не меняется   
 Сохранияем, жмем Send  
+```json
+{
+    "person": {
+        "u_age": 36,
+        "u_name": [
+            "Sergey",
+            60000,
+            36
+        ],
+        "u_salary_5_years": 252000.0
+    },
+    "qa_salary_after_1.5_year": 198000.0,
+    "qa_salary_after_12_months": 162000.0,
+    "qa_salary_after_3.5_years": 228000.0,
+    "qa_salary_after_6_months": 120000,
+    "start_qa_salary": 60000
+}
+```
