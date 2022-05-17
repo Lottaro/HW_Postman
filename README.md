@@ -257,7 +257,7 @@ URL не меняется
 Метод GET, URL http://162.55.220.72:5005/first  
 
 1. Отправить запрос  
-Жмем Send  
+Жмем *Send*  
 Ответ  
 ```
 This is the first responce from server!  
@@ -274,7 +274,7 @@ pm.test("Status code is 200", function () {
 PASS Status code is 200
 ```
 3. Проверить, что в body приходит правильный string  
-ответ в body  
+ответ в *body*  
 ```
 This is the first responce from server!
 ```
