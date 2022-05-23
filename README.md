@@ -297,4 +297,4 @@ pm.test("Status code is 200", function () {
 ```
 PASS Status code is 200
 ```
-3. Спарсить response body в json.
+3. Спарсить response body в json
