@@ -285,10 +285,7 @@ http://162.55.220.72:5005/user_info_3 (EP 2 из HW_Postman_1)
 
 1. Отправить запрос  
 Жмем *Send*  
-Ответ  
-```
-This is the first responce from server!  
-```
+
 2. Статус код 200   
 В поле тест выбираем из списка SNIPPETS *Status code is 200*, в поле ввода кода появляется:  
 ```js
@@ -300,3 +297,4 @@ pm.test("Status code is 200", function () {
 ```
 PASS Status code is 200
 ```
+3. Спарсить response body в json.
