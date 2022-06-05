@@ -10,7 +10,7 @@ Port: 5005
 
 Создал новую коллекцию HW_Postman_1
 
-# **EP_1**
+# **EP_1_1**
 
 Method: GET                                                                                          
 EndPoint: /get_method  
@@ -32,7 +32,7 @@ URL меняется на http://162.55.220.72:5005/get_method?name=Sergey&age=3
     "36"
 ]
 
-# **EP_2**
+# **EP_1_2**
 
 Method: POST  
 EndPoint: /user_info_3  
@@ -71,7 +71,7 @@ URL не меняется
     "salary": 60000
 }
 ```
-# **EP_3**
+# **EP_1_3**
 
 Method: GET  
 EndPoint: /object_info_1  
@@ -98,7 +98,7 @@ URL меняется на http://162.55.220.72:5005/object_info_1?name=Sergey&ag
     "name": "Sergey"
 }
 ```
-# **EP_4**
+# **EP_1_4**
 
 Method: GET  
 EndPoint: /object_info_2  
@@ -135,7 +135,7 @@ URL меняется на http://162.55.220.72:5005/object_info_2?name=Sergey&ag
     "start_qa_salary": 60000
 }
 ```
-# **EP_5**
+# **EP_1_5**
 
 Method: GET  
 EndPoint: /object_info_3  
@@ -185,7 +185,7 @@ URL меняется на http://162.55.220.72:5005/object_info_3?name=Sergey&ag
 }
 ```
 
-# **EP_6**
+# **EP_1_6**
 
 Method: GET  
 EndPoint: /object_info_4  
@@ -215,7 +215,7 @@ URL меняется на http://162.55.220.72:5005/object_info_4?name=Sergey&ag
     ]
 }
 ```
-# **EP_7**
+# **EP_1_7**
 
 Method: POST  
 EndPoint: /user_info_2  
@@ -280,7 +280,7 @@ PASS Status code is 200
 This is the first responce from server!   
 ```   
 
-# **EP_2_1**
+# **EP_2_2**
 http://162.55.220.72:5005/user_info_3 (EP 2 из HW_Postman_1)  
 
 1. Отправить запрос  
@@ -315,6 +315,14 @@ pm.test("Your test name", function () {
     pm.expect(responseData.name).to.eql("Sergey");
 });
 ```
-5. 
+5. Проверить, что age в ответе равно age s request (age вбить руками.)  
+в окне *Test scripts* выбираем *Response body: JSON value check* и оставляем  
+строки 1 и 3 строки, отредактировав строки:  
+```js
+pm.test("Your test name", function () {
+    pm.expect(responseData.age).to.eql("36");
+});
+```
 6. 
+7. 
 
