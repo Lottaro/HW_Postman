@@ -360,7 +360,7 @@ console.log('request data:', requestData);
 ```
  request data: {name: "Sergey", age: "36", salary: "60000"}
  ```
-**8.Проверить, что name в ответе равно name s request (name забрать из request.)**  
+**8. Проверить, что name в ответе равно name s request (name забрать из request.)**  
   
 В окне *Test scripts* выбираем *Response body: JSON value check* и в   
 окне *Tests* редактируем 1 и 3 строки, отредактировав строки:  
@@ -373,5 +373,17 @@ pm.test("Your test name", function () {
 ```
 PASS Your test name
 ```
-9. 
-
+**9. Проверить, что age в ответе равно age s request (age забрать из request.)**  
+  
+В окне *Test scripts* выбираем *Response body: JSON value check* и в   
+окне *Tests* редактируем 1 и 3 строки, отредактировав строки:  
+```js
+pm.test("Your test age", function () {
+    pm.expect(responseData.age).to.eql(requestData.age);
+});
+```
+Во вкладке *Test Results*  
+```
+PASS
+Your test age
+```
