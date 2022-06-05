@@ -257,13 +257,13 @@ URL не меняется
 Создаем New Request, переименовываем в EP_2_1  
 Метод GET, URL http://162.55.220.72:5005/first  
 
-1. Отправить запрос  
+**1. Отправить запрос**  
 Жмем *Send*  
 Ответ  
 ```
 This is the first responce from server!  
 ```
-2. Статус код 200   
+**2. Статус код 200**   
 В поле тест выбираем из списка SNIPPETS *Status code is 200*, в поле ввода кода появляется:  
 ```js
 pm.test("Status code is 200", function () {
@@ -283,11 +283,11 @@ This is the first responce from server!
 # **EP_2_2**
 http://162.55.220.72:5005/user_info_3 (EP 2 из HW_Postman_1)  
 
-1. Отправить запрос  
+**1. Отправить запрос**  
   
 Жмем *Send*  
 
-2. Статус код 200   
+**2. Статус код 200**   
   
 В поле тест выбираем из списка SNIPPETS *Status code is 200*, в поле ввода кода появляется:  
 ```js
@@ -299,7 +299,7 @@ pm.test("Status code is 200", function () {
 ```
 PASS Status code is 200
 ```
-3. Спарсить response body в json  
+**3. Спарсить response body в json**  
   
 В окне редактирования тестов пишем:
 ```js
@@ -310,10 +310,10 @@ console.log(responseData);
 ```
 {age: "36", family: {…}, name: "Sergey"…}
 ```
-4. Проверить, что name в ответе равно name s request (name вбить руками.)  
+**4. Проверить, что name в ответе равно name s request (name вбить руками.)**  
   
-В окне *Test scripts* выбираем *Response body: JSON value check* и оставляем  
-1 и 3 строки, отредактировав 3 строку:  
+В окне *Test scripts* выбираем *Response body: JSON value check* и и в   
+окне *Tests* редактируем 1 и 3 строки, отредактировав 3 строку:  
 ```js
 pm.test("Your test name", function () {
     pm.expect(responseData.name).to.eql("Sergey");
@@ -323,10 +323,10 @@ pm.test("Your test name", function () {
 ```
 PASS Your test name
 ```
-5. Проверить, что age в ответе равно age s request (age вбить руками.)  
+**5. Проверить, что age в ответе равно age s request (age вбить руками.)**  
    
-В окне *Test scripts* выбираем *Response body: JSON value check* и оставляем  
- 1 и 3 строки, отредактировав строки:  
+В окне *Test scripts* выбираем *Response body: JSON value check* и в   
+окне *Tests* редактируем 1 и 3 строки, отредактировав строки:  
 ```js
 pm.test("Your test name", function () {
     pm.expect(responseData.age).to.eql("36");
@@ -336,10 +336,10 @@ pm.test("Your test name", function () {
 ```
 PASS Your test Age
 ```
-6. Проверить, что salary в ответе равно salary s request (salary вбить руками.)  
+**6. Проверить, что salary в ответе равно salary s request (salary вбить руками.)**  
   
-В окне *Test scripts* выбираем *Response body: JSON value check* и оставляем  
-1 и 3 строки, отредактировав строки:  
+В окне *Test scripts* выбираем *Response body: JSON value check* и в   
+окне *Tests* редактируем 1 и 3 строки, отредактировав строки:  
 ```js
 pm.test("Your test salary", function () {
     pm.expect(responseData.salary).to.eql(60000);
@@ -349,7 +349,7 @@ pm.test("Your test salary", function () {
 ```
 PASS Your test salary
 ```
-7. Спарсить request
+**7. Спарсить request**  
   
 В окне редактирования тестов пишем:  
 ```js
@@ -360,6 +360,8 @@ console.log('request data:', requestData);
 ```
  request data: {name: "Sergey", age: "36", salary: "60000"}
  ```
-8. 
+**8.Проверить, что name в ответе равно name s request (name забрать из request.)**  
+  
+
 9. 
 
