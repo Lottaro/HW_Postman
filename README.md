@@ -298,7 +298,7 @@ pm.test("Status code is 200", function () {
 PASS Status code is 200
 ```
 3. Спарсить response body в json  
-*в окне редактирования тестов пишем:*
+в окне редактирования тестов пишем:
 ```js
 let responseData = pm.response.json();  
 console.log(responseData);
