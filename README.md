@@ -306,7 +306,7 @@ PASS Status code is 200
 let responseData = pm.response.json();  
 console.log(responseData);
 ```
-В консольной строке смотрим запрос:  
+В консольной строке смотрим ответ:  
 ```
 {age: "36", family: {…}, name: "Sergey"…}
 ```
@@ -345,6 +345,21 @@ pm.test("Your test salary", function () {
     pm.expect(responseData.salary).to.eql(60000);
 });
 ```
+Во вкладке *Test Results*  
+```
+PASS Your test salary
+```
 7. Спарсить request
+  
+В окне редактирования тестов пишем:  
+```js
+let requestData = request.data;  
+console.log('request data:', requestData);
+```
+В консольной строке смотрим ответ:  
+```
+ request data: {name: "Sergey", age: "36", salary: "60000"}
+ ```
 8. 
+9. 
 
