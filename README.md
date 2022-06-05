@@ -384,6 +384,18 @@ pm.test("Your test age", function () {
 ```
 Во вкладке *Test Results*  
 ```
-PASS
-Your test age
+PASS Your test age
+```
+**10. Проверить, что salary в ответе равно salary s request (salary забрать из request.)**  
+  
+В окне *Test scripts* выбираем *Response body: JSON value check* и в   
+окне *Tests* редактируем 1 и 3 строки, отредактировав строки:  
+```js
+pm.test("Your test salary", function () {
+    pm.expect(responseData.salary).to.eql(Number(requestData.salary));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS Your test salary
 ```
