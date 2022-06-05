@@ -303,9 +303,13 @@ PASS Status code is 200
 let responseData = pm.response.json();  
 console.log(responseData);
 ```
-4. Проверить, что name в ответе равно name s request (name вбить руками.)
+в консольной строке смотрим запрос:  
+```
+{age: "36", family: {…}, name: "Sergey"…}
+```
+4. Проверить, что name в ответе равно name s request (name вбить руками.)  
 в окне *Test scripts* выбираем *Response body: JSON value check* и оставляем  
-строки 1 и 3 строки, отредактировав 3 строку:
+строки 1 и 3 строки, отредактировав 3 строку:  
 ```js
 pm.test("Your test name", function () {
     pm.expect(responseData.name).to.eql("Sergey");
