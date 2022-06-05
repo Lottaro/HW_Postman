@@ -280,9 +280,10 @@ PASS Status code is 200
 This is the first responce from server!   
 ```   
 
-# **EP_2_2**
-http://162.55.220.72:5005/user_info_3 (EP 2 из HW_Postman_1)  
-
+# **EP_2_2**  
+Создаем New Request, переименовываем в EP_2_2  
+http://162.55.220.72:5005/user_info_3 (EP_1_2 из HW_Postman_1)  
+  
 **1. Отправить запрос**  
   
 Жмем *Send*  
@@ -399,3 +400,32 @@ pm.test("Your test salary", function () {
 ```
 PASS Your test salary
 ```
+**11. Вывести в консоль параметр family из response**  
+  
+В окне редактирования тестов пишем:    
+```js
+console.log('Family: ', responseData.family)
+```
+В консольной строке смотрим ответ:  
+```
+Family: {children: [2], u_salary_1_5_year: 240000}
+```
+**11.  Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)**  
+  
+В окне *Test scripts* выбираем *Response body: JSON value check* и в   
+окне *Tests* редактируем 1 и 3 строки, отредактировав строки:  
+```js
+pm.test("Your test u_salary_1_5_year", function () {
+    pm.expect(responseData.family.u_salary_1_5_year).to.eql(requestData.salary*4);
+});
+```
+Во вкладке *Test Results* 
+```
+PASS Your test u_salary_1_5_year
+```
+  
+# **EP_2_3**  
+Создаем New Request, переименовываем в EP_2_3  
+http://162.55.220.72:5005/object_info_3 (EP_1_5 из HW_Postman_1)  
+  
+  **1. Отправить запрос**  
