@@ -362,6 +362,16 @@ console.log('request data:', requestData);
  ```
 **8.Проверить, что name в ответе равно name s request (name забрать из request.)**  
   
-
+В окне *Test scripts* выбираем *Response body: JSON value check* и в   
+окне *Tests* редактируем 1 и 3 строки, отредактировав строки:  
+```js
+pm.test("Your test name", function () {
+    pm.expect(responseData.name).to.eql(requestData.name);
+});
+```
+Во вкладке *Test Results*  
+```
+PASS Your test name
+```
 9. 
 
