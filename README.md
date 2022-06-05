@@ -315,6 +315,10 @@ pm.test("Your test name", function () {
     pm.expect(responseData.name).to.eql("Sergey");
 });
 ```
+Во вкладке *Test Results*  
+```
+PASS Your test name
+```
 5. Проверить, что age в ответе равно age s request (age вбить руками.)  
 в окне *Test scripts* выбираем *Response body: JSON value check* и оставляем  
 строки 1 и 3 строки, отредактировав строки:  
@@ -322,6 +326,10 @@ pm.test("Your test name", function () {
 pm.test("Your test name", function () {
     pm.expect(responseData.age).to.eql("36");
 });
+```
+Во вкладке *Test Results*  
+```
+PASS Your test Age
 ```
 6. 
 7. 
