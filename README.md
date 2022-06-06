@@ -446,3 +446,14 @@ PASS Status code is 200
 ```
 **3. Спарсить response body в json**  
   
+В окне редактирования тестов пишем:
+```js
+let responseData = pm.response.json();  
+console.log(responseData);
+```
+В консольной строке смотрим ответ:
+```
+{age: "36", family: {…}, name: "Sergey"…}
+```
+**4. Спарсить request**  
+  
