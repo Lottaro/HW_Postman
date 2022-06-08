@@ -9,6 +9,11 @@
   
   ***  
   
+# Домашнее задание по Postman №2  
+[EP_2_1](#2.1)  
+[EP_2_2](#2.2)  
+[EP_2_3](#2.3)  
+
 # **HW_Postman_1**<a name="1"><a>  
 
 Создать запросы в Postman.
@@ -262,7 +267,7 @@ URL не меняется
 
 # **HW_Postman_2**  
 
-## **EP_2_1**
+## **EP_2_1**<a name="2.1"><a>
 Создаем New Request, переименовываем в EP_2_1  
 Метод GET, URL http://162.55.220.72:5005/first  
 
@@ -289,7 +294,7 @@ PASS EP_2_1. Status code is 200
 This is the first responce from server!   
 ```   
 
-## **EP_2_2**  
+## **EP_2_2**<a name="2.2"><a>  
 Создаем New Request, данные берем из EP_1_2  
 Метод POST, http://162.55.220.72:5005/user_info_3 (EP_1_2 из HW_Postman_1)  
   
@@ -426,7 +431,7 @@ pm.test("Your test u_salary_1_5_year", function () {
 PASS EP_2_2. Your test u_salary_1_5_year
 ```
   
-## **EP_2_3**  
+## **EP_2_3**<a name="2.3"><a>  
 Создаем New Request, данные берем из EP_1_5  
 Метод GET, http://162.55.220.72:5005/object_info_3 (EP_1_5 из HW_Postman_1)  
   
