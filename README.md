@@ -449,7 +449,7 @@ PASS Status code is 200
 В окне редактирования тестов пишем:
 ```js
 let responseData = pm.response.json();  
-console.log(responseData);
+console.log(responseData)
 ```
 В консольной строке смотрим ответ:
 ```
@@ -457,3 +457,12 @@ console.log(responseData);
 ```
 **4. Спарсить request**  
   
+В окне редактирования тестов пишем:
+```js
+let requestData = pm.request.url.query.toObject();
+console.log(requestData)
+```
+В консольной строке смотрим ответ:
+```
+{name: "Sergey", age: "36", salary: "60000"}
+```
