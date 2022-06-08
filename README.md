@@ -80,7 +80,7 @@ URL не меняется
     "salary": 60000
 }
 ```
-# **EP_1_3**<a name="1.3"><a>
+## **EP_1_3**<a name="1.3"><a>
 
 Method: GET  
 EndPoint: /object_info_1  
@@ -107,7 +107,7 @@ URL меняется на http://162.55.220.72:5005/object_info_1?name=Sergey&ag
     "name": "Sergey"
 }
 ```
-# **EP_1_4**<a name="1.4"><a>
+## **EP_1_4**<a name="1.4"><a>
 
 Method: GET  
 EndPoint: /object_info_2  
@@ -144,7 +144,7 @@ URL меняется на http://162.55.220.72:5005/object_info_2?name=Sergey&ag
     "start_qa_salary": 60000
 }
 ```
-# **EP_1_5**<a name="1.5"><a>
+## **EP_1_5**<a name="1.5"><a>
 
 Method: GET  
 EndPoint: /object_info_3  
@@ -194,7 +194,7 @@ URL меняется на http://162.55.220.72:5005/object_info_3?name=Sergey&ag
 }
 ```
 
-# **EP_1_6**<a name="1.6 "><a>
+## **EP_1_6**<a name="1.6 "><a>
 
 Method: GET  
 EndPoint: /object_info_4  
@@ -224,7 +224,7 @@ URL меняется на http://162.55.220.72:5005/object_info_4?name=Sergey&ag
     ]
 }
 ```
-# **EP_1_7**<a name="1.7"><a>
+## **EP_1_7**<a name="1.7"><a>
 
 Method: POST  
 EndPoint: /user_info_2  
@@ -262,7 +262,7 @@ URL не меняется
 
 # **HW_Postman_2**  
 
-# **EP_2_1**
+## **EP_2_1**
 Создаем New Request, переименовываем в EP_2_1  
 Метод GET, URL http://162.55.220.72:5005/first  
 
@@ -289,7 +289,7 @@ PASS EP_2_1. Status code is 200
 This is the first responce from server!   
 ```   
 
-# **EP_2_2**  
+## **EP_2_2**  
 Создаем New Request, данные берем из EP_1_2  
 Метод POST, http://162.55.220.72:5005/user_info_3 (EP_1_2 из HW_Postman_1)  
   
@@ -433,7 +433,7 @@ pm.test("Your test u_salary_1_5_year", function () {
 PASS EP_2_2. Your test u_salary_1_5_year
 ```
   
-# **EP_2_3**  
+## **EP_2_3**  
 Создаем New Request, данные берем из EP_1_5  
 Метод GET, http://162.55.220.72:5005/object_info_3 (EP_1_5 из HW_Postman_1)  
   
