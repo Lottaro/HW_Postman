@@ -272,7 +272,7 @@ pm.test("Status code is 200", function () {
 ```
 Во вкладке *Test Results*  
 ```
-PASS Status code is 200
+PASS EP_2_1. Status code is 200
 ```
 3. Проверить, что в body приходит правильный string  
 ответ в *body*  
@@ -298,7 +298,7 @@ pm.test("Status code is 200", function () {
 ```
 Во вкладке *Test Results*  
 ```
-PASS Status code is 200
+PASS EP_2_2. Status code is 200
 ```
 **3. Спарсить response body в json**  
   
@@ -322,7 +322,7 @@ pm.test("Your test name", function () {
 ```
 Во вкладке *Test Results*  
 ```
-PASS Your test name
+PASS EP_2_2. Your test name
 ```
 **5. Проверить, что age в ответе равно age s request (age вбить руками.)**  
    
@@ -335,7 +335,7 @@ pm.test("Your test name", function () {
 ```
 Во вкладке *Test Results*  
 ```
-PASS Your test Age
+PASS EP_2_2. Your test Age
 ```
 **6. Проверить, что salary в ответе равно salary s request (salary вбить руками.)**  
   
@@ -348,7 +348,7 @@ pm.test("Your test salary", function () {
 ```
 Во вкладке *Test Results*  
 ```
-PASS Your test salary
+PASS EP_2_2. Your test salary
 ```
 **7. Спарсить request**  
   
@@ -372,7 +372,7 @@ pm.test("Your test name", function () {
 ```
 Во вкладке *Test Results*  
 ```
-PASS Your test name
+PASS EP_2_2. Your test name
 ```
 **9. Проверить, что age в ответе равно age s request (age забрать из request.)**  
   
@@ -385,7 +385,7 @@ pm.test("Your test age", function () {
 ```
 Во вкладке *Test Results*  
 ```
-PASS Your test age
+PASS EP_2_2. Your test age
 ```
 **10. Проверить, что salary в ответе равно salary s request (salary забрать из request.)**  
   
@@ -398,7 +398,7 @@ pm.test("Your test salary", function () {
 ```
 Во вкладке *Test Results*  
 ```
-PASS Your test salary
+PASS EP_2_2. Your test salary
 ```
 **11. Вывести в консоль параметр family из response**  
   
@@ -421,11 +421,11 @@ pm.test("Your test u_salary_1_5_year", function () {
 ```
 Во вкладке *Test Results* 
 ```
-PASS Your test u_salary_1_5_year
+PASS EP_2_2. Your test u_salary_1_5_year
 ```
   
 # **EP_2_3**  
-Создаем New Request, данные берем из EP_1_5 
+Создаем New Request, данные берем из EP_1_5  
 Метод GET, http://162.55.220.72:5005/object_info_3 (EP_1_5 из HW_Postman_1)  
   
   **1. Отправить запрос**  
@@ -442,7 +442,7 @@ pm.test("Status code is 200", function () {
 ```
 Во вкладке *Test Results*  
 ```
-PASS Status code is 200
+PASS EP_2_3. Status code is 200
 ```
 **3. Спарсить response body в json**  
   
@@ -476,5 +476,29 @@ pm.test("Your test name", function () {
 ```
 Во вкладке *Test Results*  
 ```
-PASS Your test name
+PASS EP_2_3. Your test name
+```
+**6. Проверить, что age в ответе равно age s request (age забрать из request.)**  
+  
+В окне *Test scripts* пишем:  
+```js
+pm.test("EP_2_3. Your test age", function () {
+    pm.expect(responseData.age).to.eql(requestData.age);
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_3. Your test age
+```
+**7. Проверить, что salary в ответе равно salary s request (salary забрать из request.)**  
+  
+В окне *Test scripts* пишем:  
+```js
+pm.test("EP_2_3. Your test salary", function () {
+    pm.expect(responseData.salary).to.eql(Number(requestData.salary));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_3. Your test salary
 ```
