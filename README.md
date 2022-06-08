@@ -311,7 +311,7 @@ PASS EP_2_2. Status code is 200
 ```
 **3. Спарсить response body в json**  
   
-В окне редактирования тестов пишем:
+В окне *Tests* пишем:
 ```js
 let responseData = pm.response.json();  
 console.log(responseData);
@@ -322,8 +322,7 @@ console.log(responseData);
 ```
 **4. Проверить, что name в ответе равно name s request (name вбить руками.)**  
   
-В окне *Test scripts* выбираем *Response body: JSON value check* и и в   
-окне *Tests* редактируем 1 и 3 строки, отредактировав 3 строку:  
+В окне *Tests* пишем:  
 ```js
 pm.test("Your test name", function () {
     pm.expect(responseData.name).to.eql("Sergey");
@@ -335,8 +334,7 @@ PASS EP_2_2. Your test name
 ```
 **5. Проверить, что age в ответе равно age s request (age вбить руками.)**  
    
-В окне *Test scripts* выбираем *Response body: JSON value check* и в   
-окне *Tests* редактируем 1 и 3 строки, отредактировав строки:  
+В окне *Tests* пишем:  
 ```js
 pm.test("Your test name", function () {
     pm.expect(responseData.age).to.eql("36");
@@ -348,8 +346,7 @@ PASS EP_2_2. Your test Age
 ```
 **6. Проверить, что salary в ответе равно salary s request (salary вбить руками.)**  
   
-В окне *Test scripts* выбираем *Response body: JSON value check* и в   
-окне *Tests* редактируем 1 и 3 строки, отредактировав строки:  
+В окне *Tests* пишем:  
 ```js
 pm.test("Your test salary", function () {
     pm.expect(responseData.salary).to.eql(60000);
@@ -361,7 +358,7 @@ PASS EP_2_2. Your test salary
 ```
 **7. Спарсить request**  
   
-В окне редактирования тестов пишем:  
+В окне *Tests* пишем:  
 ```js
 let requestData = request.data;  
 console.log('request data:', requestData);
@@ -372,8 +369,7 @@ console.log('request data:', requestData);
  ```
 **8. Проверить, что name в ответе равно name s request (name забрать из request.)**  
   
-В окне *Test scripts* выбираем *Response body: JSON value check* и в   
-окне *Tests* редактируем 1 и 3 строки, отредактировав строки:  
+В окне *Tests* пишем:  
 ```js
 pm.test("Your test name", function () {
     pm.expect(responseData.name).to.eql(requestData.name);
@@ -385,8 +381,7 @@ PASS EP_2_2. Your test name
 ```
 **9. Проверить, что age в ответе равно age s request (age забрать из request.)**  
   
-В окне *Test scripts* выбираем *Response body: JSON value check* и в   
-окне *Tests* редактируем 1 и 3 строки, отредактировав строки:  
+В окне *Tests* пишем:  
 ```js
 pm.test("Your test age", function () {
     pm.expect(responseData.age).to.eql(requestData.age);
@@ -398,8 +393,7 @@ PASS EP_2_2. Your test age
 ```
 **10. Проверить, что salary в ответе равно salary s request (salary забрать из request.)**  
   
-В окне *Test scripts* выбираем *Response body: JSON value check* и в   
-окне *Tests* редактируем 1 и 3 строки, отредактировав строки:  
+В окне *Tests* пишем:  
 ```js
 pm.test("Your test salary", function () {
     pm.expect(responseData.salary).to.eql(Number(requestData.salary));
@@ -411,7 +405,7 @@ PASS EP_2_2. Your test salary
 ```
 **11. Вывести в консоль параметр family из response**  
   
-В окне редактирования тестов пишем:    
+В окне *Tests* пишем:    
 ```js
 console.log('Family: ', responseData.family)
 ```
@@ -421,8 +415,7 @@ Family: {children: [2], u_salary_1_5_year: 240000}
 ```
 **11.  Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)**  
   
-В окне *Test scripts* выбираем *Response body: JSON value check* и в   
-окне *Tests* редактируем 1 и 3 строки, отредактировав строки:  
+В окне *Tests* пишем:  
 ```js
 pm.test("Your test u_salary_1_5_year", function () {
     pm.expect(responseData.family.u_salary_1_5_year).to.eql(requestData.salary*4);
@@ -455,7 +448,7 @@ PASS EP_2_3. Status code is 200
 ```
 **3. Спарсить response body в json**  
   
-В окне *Test* пишем:
+В окне *Tests* пишем:
 ```js
 let responseData = pm.response.json();  
 console.log(responseData)
@@ -466,7 +459,7 @@ console.log(responseData)
 ```
 **4. Спарсить request**  
   
-  В окне *Tests* пишем::
+В окне *Tests* пишем::
 ```js
 let requestData = pm.request.url.query.toObject();
 console.log(requestData)
@@ -525,10 +518,11 @@ Family: {children: [2], pets: {…}, u_salary_1_5_year: 240000}
   
 В окне *Tests* пишем:  
 ```js
-pm.test("EP_2_3. Your test salary", function () {
-    pm.expect(responseData.salary).to.eql(Number(requestData.salary));
+pm.test("EP_2_3. Your test dog have name", function () {
+    pm.expect(responseData.family.pets.dog).to.haveOwnProperty('name')
 });
 ```
 Во вкладке *Test Results*  
 ```
-PASS EP_2_3. Your test salary
+PASS EP_2_3. Your test dog have name
+```
