@@ -511,3 +511,13 @@ pm.test("EP_2_3. Your test salary", function () {
 ```
 PASS EP_2_3. Your test salary
 ```
+**8. Вывести в консоль параметр family из response**  
+    
+В окне редактирования тестов пишем:    
+```js
+console.log('Family: ', responseData.family)
+```
+В консольной строке смотрим ответ:  
+```
+Family: {children: [2], pets: {…}, u_salary_1_5_year: 240000}
+```
