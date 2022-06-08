@@ -1,8 +1,15 @@
-## [Домашнее задание по Postman №1](#1)  
+## Домашнее задание по Postman №1  
+[EP_1_1](#1.1)   
+[EP_1_2](#1.2)     
+[EP_1_3](#1.3)     
+[EP_1_4](#1.4)     
+[EP_1_5](#1.5)     
+[EP_1_6](#1.6)     
+[EP_1_7](#1.7)     
+  
   ***  
-## HW_Postman
-
-# **HW_Postman_1** <a name="1"><a>
+  
+# **HW_Postman_1**<a name="1"><a>  
 
 Создать запросы в Postman.
 
@@ -12,7 +19,7 @@ Port: 5005
 
 Создал новую коллекцию HW_Postman_1
 
-# **EP_1_1**
+# **EP_1_1**<a name="1.1"><a>
 
 Method: GET                                                                                          
 EndPoint: /get_method  
@@ -34,7 +41,7 @@ URL меняется на http://162.55.220.72:5005/get_method?name=Sergey&age=3
     "36"
 ]
 
-# **EP_1_2**
+# **EP_1_2**<a name="1.2"><a>
 
 Method: POST  
 EndPoint: /user_info_3  
@@ -73,7 +80,7 @@ URL не меняется
     "salary": 60000
 }
 ```
-# **EP_1_3**
+# **EP_1_3**<a name="1.3"><a>
 
 Method: GET  
 EndPoint: /object_info_1  
@@ -100,7 +107,7 @@ URL меняется на http://162.55.220.72:5005/object_info_1?name=Sergey&ag
     "name": "Sergey"
 }
 ```
-# **EP_1_4**
+# **EP_1_4**<a name="1.4"><a>
 
 Method: GET  
 EndPoint: /object_info_2  
@@ -137,7 +144,7 @@ URL меняется на http://162.55.220.72:5005/object_info_2?name=Sergey&ag
     "start_qa_salary": 60000
 }
 ```
-# **EP_1_5**
+# **EP_1_5**<a name="1.5"><a>
 
 Method: GET  
 EndPoint: /object_info_3  
@@ -187,7 +194,7 @@ URL меняется на http://162.55.220.72:5005/object_info_3?name=Sergey&ag
 }
 ```
 
-# **EP_1_6**
+# **EP_1_6**<a name="1.6 "><a>
 
 Method: GET  
 EndPoint: /object_info_4  
@@ -217,7 +224,7 @@ URL меняется на http://162.55.220.72:5005/object_info_4?name=Sergey&ag
     ]
 }
 ```
-# **EP_1_7**
+# **EP_1_7**<a name="1.7"><a>
 
 Method: POST  
 EndPoint: /user_info_2  
