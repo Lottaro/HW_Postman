@@ -466,3 +466,15 @@ console.log(requestData)
 ```
 {name: "Sergey", age: "36", salary: "60000"}
 ```
+**Проверить, что name в ответе равно name s request (name забрать из request.)**  
+  
+В окне *Test scripts* пишем:  
+```js
+pm.test("Your test name", function () {
+    pm.expect(responseData.name).to.eql(requestData.name);
+});
+```
+Во вкладке *Test Results*  
+```
+PASS Your test name
+```
