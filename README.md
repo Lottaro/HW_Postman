@@ -1,4 +1,4 @@
-## Домашнее задание по Postman №1  
+# Домашнее задание по Postman №1  
 [EP_1_1](#1.1)   
 [EP_1_2](#1.2)     
 [EP_1_3](#1.3)     
@@ -19,7 +19,7 @@ Port: 5005
 
 Создал новую коллекцию HW_Postman_1
 
-# **EP_1_1**<a name="1.1"><a>
+## **EP_1_1**<a name="1.1"><a>
 
 Method: GET                                                                                          
 EndPoint: /get_method  
@@ -41,7 +41,7 @@ URL меняется на http://162.55.220.72:5005/get_method?name=Sergey&age=3
     "36"
 ]
 
-# **EP_1_2**<a name="1.2"><a>
+## **EP_1_2**<a name="1.2"><a>
 
 Method: POST  
 EndPoint: /user_info_3  
