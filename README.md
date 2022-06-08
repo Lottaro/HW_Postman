@@ -455,7 +455,7 @@ PASS EP_2_3. Status code is 200
 ```
 **3. Спарсить response body в json**  
   
-В окне редактирования тестов пишем:
+В окне *Test* пишем:
 ```js
 let responseData = pm.response.json();  
 console.log(responseData)
@@ -466,7 +466,7 @@ console.log(responseData)
 ```
 **4. Спарсить request**  
   
-В окне редактирования тестов пишем:
+  В окне *Tests* пишем::
 ```js
 let requestData = pm.request.url.query.toObject();
 console.log(requestData)
@@ -477,7 +477,7 @@ console.log(requestData)
 ```
 **Проверить, что name в ответе равно name s request (name забрать из request.)**  
   
-В окне *Test scripts* пишем:  
+В окне *Tests* пишем:  
 ```js
 pm.test("Your test name", function () {
     pm.expect(responseData.name).to.eql(requestData.name);
@@ -489,7 +489,7 @@ PASS EP_2_3. Your test name
 ```
 **6. Проверить, что age в ответе равно age s request (age забрать из request.)**  
   
-В окне *Test scripts* пишем:  
+В окне *Tests* пишем:  
 ```js
 pm.test("EP_2_3. Your test age", function () {
     pm.expect(responseData.age).to.eql(requestData.age);
@@ -501,7 +501,7 @@ PASS EP_2_3. Your test age
 ```
 **7. Проверить, что salary в ответе равно salary s request (salary забрать из request.)**  
   
-В окне *Test scripts* пишем:  
+В окне *Tests* пишем:  
 ```js
 pm.test("EP_2_3. Your test salary", function () {
     pm.expect(responseData.salary).to.eql(Number(requestData.salary));
@@ -513,7 +513,7 @@ PASS EP_2_3. Your test salary
 ```
 **8. Вывести в консоль параметр family из response**  
     
-В окне редактирования тестов пишем:    
+В окне *Tests* пишем:  
 ```js
 console.log('Family: ', responseData.family)
 ```
@@ -521,3 +521,14 @@ console.log('Family: ', responseData.family)
 ```
 Family: {children: [2], pets: {…}, u_salary_1_5_year: 240000}
 ```
+**9. Проверить, что у параметра dog есть параметры name**  
+  
+В окне *Tests* пишем:  
+```js
+pm.test("EP_2_3. Your test salary", function () {
+    pm.expect(responseData.salary).to.eql(Number(requestData.salary));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_3. Your test salary
