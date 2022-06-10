@@ -435,7 +435,7 @@ PASS EP_2_2. Your test u_salary_1_5_year
 Создаем New Request, данные берем из EP_1_5  
 Метод GET, http://162.55.220.72:5005/object_info_3 (EP_1_5 из HW_Postman_1)  
   
-  **1. Отправить запрос**  
+**1. Отправить запрос**  
   
 Жмем *Send*  
   
@@ -568,3 +568,37 @@ pm.test("EP_2_3. Your test dog have age 4", function () {
 PASS EP_2_3. Your test dog have age 4
 ```
   
+## **EP_2_4**<a name="2.4"><a>  
+Создаем New Request, данные берем из EP_1_6  
+Метод GET, http://162.55.220.72:5005/object_info_4 (EP_1_5 из HW_Postman_1)  
+  
+**1. Отправить запрос**  
+  
+**1. Отправить запрос**  
+  
+Жмем *Send*  
+  
+**2. Статус код 200**   
+  
+В поле тест выбираем из списка SNIPPETS *Status code is 200*, в поле ввода кода появляется:  
+```js
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_3. Status code is 200
+```
+  
+**3. Спарсить response body в json**  
+  
+В окне *Tests* пишем:
+```js
+let responseData = pm.response.json();  
+console.log(responseData)
+```
+В консольной строке смотрим ответ:
+```
+{age: 36, name: "Sergey", salary: [3]}
+```
