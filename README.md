@@ -444,7 +444,7 @@ PASS EP_2_2. Your test u_salary_1_5_year
   
 В поле тест выбираем из списка SNIPPETS *Status code is 200*, в поле ввода кода появляется:  
 ```js
-pm.test("Status code is 200", function () {
+pm.test("EP_2_3. Status code is 200", function () {
     pm.response.to.have.status(200);
 });
 ```
@@ -478,7 +478,7 @@ console.log(requestData)
   
 В окне *Tests* пишем:  
 ```js
-pm.test("Your test name", function () {
+pm.test("EP_2_3. Your test name", function () {
     pm.expect(responseData.name).to.eql(requestData.name);
 });
 ```
@@ -581,13 +581,13 @@ PASS EP_2_3. Your test dog have age 4
   
 В поле тест выбираем из списка SNIPPETS *Status code is 200*, в поле ввода кода появляется:  
 ```js
-pm.test("Status code is 200", function () {
+pm.test("EP_2_4. Status code is 200", function () {
     pm.response.to.have.status(200);
 });
 ```
 Во вкладке *Test Results*  
 ```
-PASS EP_2_3. Status code is 200
+PASS EP_2_4. Status code is 200
 ```
   
 **3. Спарсить response body в json**  
@@ -616,4 +616,13 @@ console.log(requestData)
   
 **5. Проверить, что name в ответе равно name s request (name забрать из request.)**  
   
- 
+В окне *Tests* пишем:  
+```js
+pm.test("EP_2_4. Your test name", function () {
+    pm.expect(responseData.name).to.eql(requestData.name);
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_4. Your test name
+```
