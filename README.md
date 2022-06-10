@@ -419,7 +419,7 @@ console.log('Family: ', responseData.family)
 ```
 Family: {children: [2], u_salary_1_5_year: 240000}
 ```
-**11.  Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)**  
+**12.  Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)**  
   
 В окне *Tests* пишем:  
 ```js
@@ -474,7 +474,7 @@ console.log(requestData)
 ```
 {name: "Sergey", age: "36", salary: "60000"}
 ```
-**Проверить, что name в ответе равно name s request (name забрать из request.)**  
+**5. Проверить, что name в ответе равно name s request (name забрать из request.)**  
   
 В окне *Tests* пишем:  
 ```js
@@ -601,3 +601,19 @@ console.log(responseData)
 ```
 {age: 36, name: "Sergey", salary: [3]}
 ```
+  
+**4. Спарсить request**  
+  
+В окне *Tests* пишем:  
+```
+let requestData = pm.request.url.query.toObject();
+console.log(requestData)
+```
+В консольной строке смотрим ответ:
+```
+{name: "Sergey", age: "36", salary: "60000"}
+```
+  
+**5. Проверить, что name в ответе равно name s request (name забрать из request.)**  
+  
+ 
