@@ -543,3 +543,28 @@ pm.test("EP_2_3. Your test dog have age", function () {
 ```
 PASS EP_2_3. Your test dog have age
 ```
+**11. Проверить, что параметр name имеет значение Luky**  
+  
+В окне *Tests* пишем:  
+```js
+pm.test("EP_2_3. Your test dog have name Luky", function () {
+    pm.expect(responseData.family.pets.dog.name).to.eql('Luky')
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_3. Your test dog have name Luky
+```
+**12. Проверить, что параметр age имеет значение 4**  
+  
+В окне *Tests* пишем:  
+```js
+pm.test("EP_2_3. Your test dog have age 4", function () {
+    pm.expect(responseData.family.pets.dog.age).to.eql(4)
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_3. Your test dog have age 4
+```
+  
