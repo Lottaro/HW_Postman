@@ -531,3 +531,15 @@ pm.test("EP_2_3. Your test dog have name", function () {
 ```
 PASS EP_2_3. Your test dog have name
 ```
+**10. Проверить, что у параметра dog есть параметры age**  
+  
+В окне *Tests* пишем:  
+```js
+pm.test("EP_2_3. Your test dog have age", function () {
+    pm.expect(responseData.family.pets.dog).to.haveOwnProperty('age')
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_3. Your test dog have age
+```
