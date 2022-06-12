@@ -642,11 +642,20 @@ PASS EP_2_4. Your test age
   
 В окне *Tests* пишем:  
 ```js
-pm.test("EP_2_4. Your test salary", function () {
-    pm.expect(responseData.salary[0]).to.eql(Number(requestData.salary))
-});
+console.log(requestData.salary);
 ```
-Во вкладке *Test Results*  
+В консольной строке смотрим ответ:
 ```
-PASS EP_2_4. Your test salary
-```  
+60000
+```
+
+**8. Вывести в консоль параметр salary из response**  
+  
+В окне *Tests* пишем:  
+```js
+console.log(requestData.salary);
+```
+В консольной строке смотрим ответ:
+```
+(3) [60000, "120000", "180000"]
+```
