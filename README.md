@@ -727,9 +727,16 @@ PASS EP_2_4. Your test salary 2
 ```
 **15. Создать в окружении переменную name**  
   
-в меню слева выбирать *Environment*, далее жмем *New* и выбираем из списка *Environment*.
-Переименовываем в Environment_Sergey_Karabekovю В строку *Variable* вночим название переменной name, в *Current value* - Sergey
+в меню слева выбирать *Environment*, далее жмем *New* и выбираем из списка *Environment*.  
+Переименовываем в Environment_Sergey_Karabekovю В строку *Variable* вносим название переменной name, в *Current value* пишем Sergey  
+  
 **16. Создать в окружении переменную age**  
   
+в меню слева выбирать *Environment*, далее выбираем Environment_Sergey_Karabekovю.  
+В строку *Variable* вносим название переменной age, в *Current value* пишем 36  
+  
 **17. Создать в окружении переменную salary**  
+  
+в меню слева выбирать *Environment*, далее выбираем Environment_Sergey_Karabekovю.  
+В строку *Variable* вносим название переменной salary, в *Current value* пишем 60000  
   
