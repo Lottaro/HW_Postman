@@ -653,9 +653,39 @@ console.log(requestData.salary);
   
 В окне *Tests* пишем:  
 ```js
-console.log(requestData.salary);
+console.log(responseData.salary);
 ```
 В консольной строке смотрим ответ:
 ```
 (3) [60000, "120000", "180000"]
+```
+**9. Вывести в консоль 0-й элемент параметра salary из response**  
+  
+В окне *Tests* пишем:  
+```js
+console.log(responseData.salary[0]);
+```
+В консольной строке смотрим ответ:
+```
+60000
+```
+**10. Вывести в консоль 1-й элемент параметра salary параметр salary из response**  
+  
+В окне *Tests* пишем:  
+```js
+console.log(responseData.salary[1]);
+```
+В консольной строке смотрим ответ:
+```
+120000
+```
+**11. Вывести в консоль 2-й элемент параметра salary параметр salary из response**  
+  
+В окне *Tests* пишем:  
+```js
+console.log(responseData.salary[2]);
+```
+В консольной строке смотрим ответ:
+```
+180000
 ```
