@@ -313,7 +313,7 @@ pm.test("Status code is 200", function () {
 ```
 Во вкладке *Test Results*  
 ```
-PASS EP_2_2. Status code is 200
+PASS Status code is 200
 ```
 **3. Спарсить response body в json**  
   
@@ -442,15 +442,15 @@ PASS EP_2_2. Your test u_salary_1_5_year
   
 **2. Статус код 200**   
   
-В поле тест выбираем из списка SNIPPETS *Status code is 200*, в поле ввода кода появляется:  
+В поле тест выбираем из списка SNIPPETS *Status code is 200*, в поле ввода кода появляется:    
 ```js
-pm.test("EP_2_3. Status code is 200", function () {
+pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
 ```
 Во вкладке *Test Results*  
 ```
-PASS EP_2_3. Status code is 200
+PASS Status code is 200
 ```
 **3. Спарсить response body в json**  
   
@@ -579,15 +579,15 @@ PASS EP_2_3. Your test dog have age 4
   
 **2. Статус код 200**   
   
-В поле тест выбираем из списка SNIPPETS *Status code is 200*, в поле ввода кода появляется:  
+В поле тест выбираем из списка SNIPPETS *Status code is 200*, в поле ввода кода появляется:    
 ```js
-pm.test("EP_2_4. Status code is 200", function () {
+pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
 ```
 Во вкладке *Test Results*  
 ```
-PASS EP_2_4. Status code is 200
+PASS Status code is 200
 ```
   
 **3. Спарсить response body в json**  
