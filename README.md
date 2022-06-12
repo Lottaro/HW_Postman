@@ -626,3 +626,27 @@ pm.test("EP_2_4. Your test name", function () {
 ```
 PASS EP_2_4. Your test name
 ```
+**6. Проверить, что age в ответе равно age из request (age забрать из request.)**
+  
+В окне *Tests* пишем:  
+```js
+pm.test("EP_2_4. Your test age", function () {
+    pm.expect(responseData.age).to.eql(Number(requestData.age));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_4. Your test age
+```  
+**7. Вывести в консоль параметр salary из request**  
+  
+В окне *Tests* пишем:  
+```js
+pm.test("EP_2_4. Your test salary", function () {
+    pm.expect(responseData.salary[0]).to.eql(Number(requestData.salary))
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_4. Your test salary
+```  
