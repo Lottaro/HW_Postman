@@ -689,3 +689,39 @@ console.log(responseData.salary[2]);
 ```
 180000
 ```
+**12. Проверить, что 0-й элемент параметра salary равен salary из request (salary забрать из request.)**  
+  
+В окне *Tests* пишем:  
+```js
+pm.test("EP_2_4. Your test salary 0", function () {
+    pm.expect(responseData.salary[0]).to.eql(Number(requestData.salary));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_4. Your test salary 0
+```
+**13. Проверить, что 1-й элемент параметра salary равен salary*2 из request (salary забрать из request.)**  
+  
+В окне *Tests* пишем:  
+```js
+pm.test("EP_2_4. Your test salary 1", function () {
+    pm.expect(Number(responseData.salary[1])).to.eql(Number(requestData.salary*2));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_4. Your test salary 1
+```
+**14. Проверить, что 2-й элемент параметра salary равен salary*3 из request (salary забрать из request.)**  
+  
+В окне *Tests* пишем:  
+```js
+pm.test("EP_2_4. Your test salary 2", function () {
+    pm.expect(Number(responseData.salary[2])).to.eql(Number(requestData.salary*3));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_4. Your test salary 2
+```
