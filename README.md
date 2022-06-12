@@ -725,3 +725,11 @@ pm.test("EP_2_4. Your test salary 2", function () {
 ```
 PASS EP_2_4. Your test salary 2
 ```
+**15. Создать в окружении переменную name**  
+  
+в меню слева выбирать *Environment*, далее жмем *New* и выбираем из списка *Environment*.
+Переименовываем в Environment_Sergey_Karabekovю В строку *Variable* вночим название переменной name, в *Current value* - Sergey
+**16. Создать в окружении переменную age**  
+  
+**17. Создать в окружении переменную salary**  
+  
