@@ -746,3 +746,32 @@ PASS EP_2_4. Your test salary 2
 ```js
 pm.environment.set('name', responseData.name)
 ```
+**19. Передать в окружение переменную age**  
+  
+В окне *Tests* пишем:  
+```js
+pm.environment.set('age', responseData.age)
+```
+**20. Передать в окружение переменную salary**  
+  
+В окне *Tests* пишем:  
+```js
+pm.environment.set('salary', responseData.salary[0])
+```
+**21. Написать цикл который выведет в консоль по порядку элементы списка из параметра salary**  
+  
+В окне *Tests* пишем:  
+```js
+for (let i of responseData.salary) {  
+console.log('My salary:',i)  
+	}
+```
+В консольной строке смотрим ответ:
+```
+
+My salary: 60000
+ 
+My salary: 120000
+ 
+My salary: 180000
+```
