@@ -915,3 +915,51 @@ pm.test("EP_2_5. Your test start_qa_salary", function () {
 ```
 PASS EP_2_5. Your test start_qa_salary
 ```
+**15. Проверить, что параметр qa_salary_after_6_months равен salary*2 из request (salary забрать из request.)**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_5. Your test qa_salary_after_6_months", function () {
+    pm.expect(responseData.qa_salary_after_6_months).to.eql(Number(requestData.salary*2));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_5. Your test qa_salary_after_6_months
+```
+**16. Проверить, что параметр qa_salary_after_12_months равен salary*2.7 из request (salary забрать из request.)**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_5. Your test qa_salary_after_12_months", function () {
+    pm.expect(responseData.qa_salary_after_12_months).to.eql(Number(requestData.salary*2.7));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_5. Your test qa_salary_after_12_months
+```
+**17. Проверить, что параметр qa_salary_after_1.5_year равен salary*3.3 из request (salary забрать из request.)**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_5. Your test qa_salary_after_1.5_year", function () {
+    pm.expect(responseData['qa_salary_after_1.5_year']).to.eql(Number(requestData.salary*3.3));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_5. Your test qa_salary_after_1.5_year
+```
+**18. Проверить, что параметр qa_salary_after_3.5_years равен salary*3.8 из request (salary забрать из request.)**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_5. Your test qa_salary_after_3.5_years", function () {
+    pm.expect(responseData['qa_salary_after_3.5_years']).to.eql(Number(requestData.salary*3.8));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_5. Your test qa_salary_after_3.5_years
+```
