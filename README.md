@@ -740,3 +740,9 @@ PASS EP_2_4. Your test salary 2
 в меню слева выбирать *Environment*, далее выбираем Environment_Sergey_Karabekovю.  
 В строку *Variable* вносим название переменной salary, в *Current value* пишем 60000  
   
+**18. Передать в окружение переменную name**  
+  
+В окне *Tests* пишем:  
+```js
+pm.environment.set('name', responseData.name)
+```
