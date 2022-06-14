@@ -841,17 +841,65 @@ pm.test("EP_2_5. Your test salary have start_qa_salary", function () {
 ```
 Во вкладке *Test Results*  
 ```
-PASS EP_2_3. Your test salary have start_qa_salary
+PASS EP_2_5. Your test salary have start_qa_salary
 ```
 **9. Проверить, что json response имеет параметр qa_salary_after_6_months**  
   
 В окне *Tests* пишем:
 ```js
-pm.test("EP_2_3. Your test salary have qa_salary_after_6_months", function () {
+pm.test("EP_2_5. Your test salary have qa_salary_after_6_months", function () {
     pm.expect(responseData).to.haveOwnProperty('qa_salary_after_6_months')
 });
 ```
 Во вкладке *Test Results*  
 ```
-PASS EP_2_3. Your test salary have qa_salary_after_6_months
+PASS EP_2_5. Your test salary have qa_salary_after_6_months
+```
+**10. Проверить, что json response имеет параметр qa_salary_after_12_months**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_5. Your test salary have qa_salary_after_6_months", function () {
+    pm.expect(responseData).to.haveOwnProperty('qa_salary_after_6_months')
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_5. Your test salary have qa_salary_after_12_months
+```
+**11. Проверить, что json response имеет параметр qa_salary_after_1.5_year**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_5. Your test salary have qa_salary_after_1.5_year", function () {
+    pm.expect(responseData).to.haveOwnProperty('qa_salary_after_1.5_year')
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_5. Your test salary have qa_salary_after_1.5_year
+```
+**12. Проверить, что json response имеет параметр qa_salary_after_3.5_years**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_5. Your test salary have qa_salary_after_3.5_years", function () {
+    pm.expect(responseData).to.haveOwnProperty('qa_salary_after_3.5_years')
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_5. Your test salary have qa_salary_after_3.5_years
+```
+**13. Проверить, что json response имеет параметр person**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_5. Your test have person", function () {
+    pm.expect(responseData).to.haveOwnProperty('person')
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_5. Your test have person
 ```
