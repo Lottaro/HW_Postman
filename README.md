@@ -776,7 +776,7 @@ My salary: 120000
 My salary: 180000
 ```
   
-## **EP_2_4**<a name="2.5"><a>  
+## **EP_2_5**<a name="2.5"><a>  
 Создаем New Request, выбираем метод POST,  
 пишем в *Enter request URL* http://162.55.220.72:5005/user_info_2 (EP_1_7 из HW_Postman_1)  
   
