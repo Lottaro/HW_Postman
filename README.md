@@ -835,11 +835,23 @@ request data: {name: "Sergey", age: "36", salary: "60000"}
   
 В окне *Tests* пишем:
 ```js
-pm.test("EP_2_5. start_qa_salary", function () {
-    pm.expect(responseData.start_qa_salary).to.eql(60000);
+pm.test("EP_2_5. Your test salary have start_qa_salary", function () {
+    pm.expect(responseData).to.haveOwnProperty('start_qa_salary')
 });
 ```
-В консольной строке смотрим ответ:
+Во вкладке *Test Results*  
 ```
-PASS EP_2_5. start_qa_salary
+PASS EP_2_3. Your test salary have start_qa_salary
+```
+**9. Проверить, что json response имеет параметр qa_salary_after_6_months**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_3. Your test salary have qa_salary_after_6_months", function () {
+    pm.expect(responseData).to.haveOwnProperty('qa_salary_after_6_months')
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_3. Your test salary have qa_salary_after_6_months
 ```
