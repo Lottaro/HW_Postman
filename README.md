@@ -274,6 +274,7 @@ URL не меняется
 Метод GET, URL http://162.55.220.72:5005/first  
 
 **1. Отправить запрос**  
+  
 Жмем *Send*  
 Ответ  
 ```
@@ -321,11 +322,11 @@ PASS Status code is 200
 В окне *Tests* пишем:
 ```js
 let responseData = pm.response.json();  
-console.log(responseData);
+console.log('response data:', responseData)
 ```
 В консольной строке смотрим ответ:  
 ```
-{age: "36", family: {…}, name: "Sergey"…}
+response data: {age: "36", family: {…}, name: "Sergey"…}
 ```
 **4. Проверить, что name в ответе равно name s request (name вбить руками.)**  
   
@@ -368,7 +369,7 @@ PASS EP_2_2. Your test salary
 В окне *Tests* пишем:  
 ```js
 let requestData = request.data;  
-console.log('request data:', requestData);
+console.log('request data:', requestData)
 ```
 В консольной строке смотрим ответ:  
 ```
@@ -458,22 +459,22 @@ PASS Status code is 200
 В окне *Tests* пишем:
 ```js
 let responseData = pm.response.json();  
-console.log(responseData)
+console.log('response data:', responseData)
 ```
 В консольной строке смотрим ответ:
 ```
-{age: "36", family: {…}, name: "Sergey"…}
+response data: {age: "36", family: {…}, name: "Sergey"…}
 ```
 **4. Спарсить request**  
   
 В окне *Tests* пишем::
 ```js
 let requestData = pm.request.url.query.toObject();
-console.log(requestData)
+console.log('request data:', requestData)
 ```
 В консольной строке смотрим ответ:
 ```
-{name: "Sergey", age: "36", salary: "60000"}
+request data: {name: "Sergey", age: "36", salary: "60000"}
 ```
 **5. Проверить, что name в ответе равно name s request (name забрать из request.)**  
   
@@ -596,11 +597,11 @@ PASS Status code is 200
 В окне *Tests* пишем:
 ```js
 let responseData = pm.response.json();  
-console.log(responseData)
+console.log('response data:', responseData)
 ```
 В консольной строке смотрим ответ:
 ```
-{age: 36, name: "Sergey", salary: [3]}
+response data: {age: 36, name: "Sergey", salary: [3]}
 ```
   
 **4. Спарсить request**  
@@ -608,11 +609,11 @@ console.log(responseData)
 В окне *Tests* пишем:  
 ```
 let requestData = pm.request.url.query.toObject();
-console.log(requestData)
+console.log('request data:', requestData)
 ```
 В консольной строке смотрим ответ:
 ```
-{name: "Sergey", age: "36", salary: "60000"}
+request data: {name: "Sergey", age: "36", salary: "60000"}
 ```
   
 **5. Проверить, что name в ответе равно name s request (name забрать из request.)**  
@@ -791,3 +792,31 @@ My salary: 180000
 **3. Вставить параметр name из окружения в name**  
   
 перейти во вкладку *Body*, выбрать *from-data* в столбце *Value* напротив *name* написать {{name}}   
+  
+**4. Отправить запрос.**  
+  
+Жмем *Send*  
+
+**5. Статус код 200**   
+  
+В поле тест выбираем из списка SNIPPETS *Status code is 200*, в поле ввода кода появляется:  
+```js
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+```
+Во вкладке *Test Results*  
+```
+PASS Status code is 200
+```
+**Спарсить response body в json**  
+  
+В окне *Tests* пишем:
+```js
+let responseData = pm.response.json();  
+console.log('response data:', responseData)
+```
+В консольной строке смотрим ответ:
+```
+response data: {person: {…}, qa_salary_after_1.5_year: 198000, qa_salary_after_12_months: 162000…}
+```
