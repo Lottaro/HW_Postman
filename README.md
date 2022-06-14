@@ -859,8 +859,8 @@ PASS EP_2_5. Your test salary have qa_salary_after_6_months
   
 В окне *Tests* пишем:
 ```js
-pm.test("EP_2_5. Your test salary have qa_salary_after_6_months", function () {
-    pm.expect(responseData).to.haveOwnProperty('qa_salary_after_6_months')
+pm.test("EP_2_5. Your test salary have qa_salary_after_12_months", function () {
+    pm.expect(responseData).to.haveOwnProperty('qa_salary_after_12_months')
 });
 ```
 Во вкладке *Test Results*  
@@ -902,4 +902,16 @@ pm.test("EP_2_5. Your test have person", function () {
 Во вкладке *Test Results*  
 ```
 PASS EP_2_5. Your test have person
+```
+**14. Проверить, что параметр start_qa_salary равен salary из request (salary забрать из request.)**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_5. Your test start_qa_salary", function () {
+    pm.expect(responseData.start_qa_salary).to.eql(Number(requestData.salary));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_5. Your test start_qa_salary
 ```
