@@ -781,4 +781,5 @@ My salary: 180000
 Создаем New Request, выбираем метод POST,  
 пишем в *Enter request URL* http://162.55.220.72:5005/user_info_2 (EP_1_7 из HW_Postman_1)  
   
+**1. Вставить параметр salary из окружения в request**  
   
