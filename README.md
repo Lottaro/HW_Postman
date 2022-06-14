@@ -809,7 +809,7 @@ pm.test("Status code is 200", function () {
 ```
 PASS Status code is 200
 ```
-**Спарсить response body в json**  
+**6. Спарсить response body в json**  
   
 В окне *Tests* пишем:
 ```js
@@ -819,4 +819,27 @@ console.log('response data:', responseData)
 В консольной строке смотрим ответ:
 ```
 response data: {person: {…}, qa_salary_after_1.5_year: 198000, qa_salary_after_12_months: 162000…}
+```
+**7. Спарсить request**  
+  
+В окне *Tests* пишем:
+```js
+let requestData = request.data;  
+console.log('request data:', requestData)
+```
+В консольной строке смотрим ответ:
+```
+request data: {name: "Sergey", age: "36", salary: "60000"}
+```
+**8. Проверить, что json response имеет параметр start_qa_salary**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_5. start_qa_salary", function () {
+    pm.expect(responseData.start_qa_salary).to.eql(60000);
+});
+```
+В консольной строке смотрим ответ:
+```
+PASS EP_2_5. start_qa_salary
 ```
