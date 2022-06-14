@@ -963,3 +963,41 @@ pm.test("EP_2_5. Your test qa_salary_after_3.5_years", function () {
 ```
 PASS EP_2_5. Your test qa_salary_after_3.5_years
 ```
+**19. Проверить, что в параметре person, 1-й элемент из u_name равен salary из request (salary забрать из request.)**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_5. Your test u_name", function () {
+    pm.expect(responseData.person.u_name[1]).to.eql(Number(requestData.salary));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_5. Your test u_name
+```
+**20. Проверить, что что параметр u_age равен age из request (age забрать из request.)**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_5. Your test u_age", function () {
+    pm.expect(responseData.person.u_age).to.eql(Number(requestData.age));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_5. Your test u_age
+```
+**21. Проверить, что параметр u_salary_5_years равен salary*4.2 из request (salary забрать из request.)**  
+  
+В окне *Tests* пишем:
+```js
+pm.test("EP_2_5. Your test u_salary_5_years", function () {
+    pm.expect(responseData.person.u_salary_5_years).to.eql(Number(requestData.salary*4.2));
+});
+```
+Во вкладке *Test Results*  
+```
+PASS EP_2_5. Your test u_salary_5_years
+```
+__22. ***Написать цикл который выведет в консоль по порядку элементы списка из параметра person__  
+  
