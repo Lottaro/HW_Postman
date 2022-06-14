@@ -779,4 +779,4 @@ My salary: 180000
   
 ## **EP_2_4**<a name="2.5"><a>  
 Создаем New Request, данные берем из EP_1_7  
-Метод GET, http://162.55.220.72:5005/object_info_4 (EP_1_7 из HW_Postman_1)
+Метод GET, http://162.55.220.72:5005/user_info_2 (EP_1_7 из HW_Postman_1)
