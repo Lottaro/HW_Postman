@@ -763,13 +763,12 @@ pm.environment.set('salary', responseData.salary[0])
   
 В окне *Tests* пишем:  
 ```js
-for (let i of responseData.salary) {  
-console.log('My salary:',i)  
-	}
+for (let i = 0; i < 3; i=i+1) {
+    console.log('My salary:', responseData.salary[0+i])
+}
 ```
 В консольной строке смотрим ответ:
 ```
-
 My salary: 60000
  
 My salary: 120000
