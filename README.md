@@ -269,6 +269,8 @@ URL не меняется
 }
 ```
 
+  ***  
+	
 # **HW_Postman_2**  
 
 ## **EP_2_1**<a name="2.1"><a>
@@ -436,6 +438,8 @@ pm.test("Your test u_salary_1_5_year", function () {
 PASS EP_2_2. Your test u_salary_1_5_year
 ```
   
+  ***  
+	
 ## **EP_2_3**<a name="2.3"><a>  
 Создаем New Request, данные берем из EP_1_5  
 Метод GET, http://162.55.220.72:5005/object_info_3 (EP_1_5 из HW_Postman_1)  
@@ -572,7 +576,9 @@ pm.test("EP_2_3. Your test dog have age 4", function () {
 ```
 PASS EP_2_3. Your test dog have age 4
 ```
-  
+
+  ***  
+
 ## **EP_2_4**<a name="2.4"><a>  
 Создаем New Request, данные берем из EP_1_6  
 Метод GET, http://162.55.220.72:5005/object_info_4 (EP_1_6 из HW_Postman_1)  
@@ -776,8 +782,10 @@ My salary: 60000
  
 My salary: 120000
  
-My salary: 180000
+My salary: 18000
 ```
+      
+  ***     
   
 ## **EP_2_5**<a name="2.5"><a>  
 Создаем New Request, выбираем метод POST,  
