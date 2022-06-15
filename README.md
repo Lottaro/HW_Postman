@@ -1001,3 +1001,17 @@ PASS EP_2_5. Your test u_salary_5_years
 ```
 __22. ***Написать цикл который выведет в консоль по порядку элементы списка из параметра person__  
   
+В окне *Tests* пишем:
+```js
+for (let i in responseData.person) {  
+console.log(i +': ' + responseData.person[i]);  
+	}
+```
+В консольной строке смотрим ответ:
+```
+u_age: 36
+ 
+u_name: Sergey,60000,36
+ 
+u_salary_5_years: 252000
+```
