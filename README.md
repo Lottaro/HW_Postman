@@ -297,8 +297,15 @@ PASS EP_2_1. Status code is 200
 ```
 3. Проверить, что в body приходит правильный string  
 ответ в *body*  
+
+```js
+pm.test("EP_2_1. Your test body", function () {
+    pm.response.to.have.body('This is the first responce from server!');
+});
 ```
-This is the first responce from server!   
+Во вкладке *Test Results*  
+```
+PASS EP_2_1. Your test body
 ```   
 
 ## **EP_2_2**<a name="2.2"><a>  
